@@ -25,15 +25,8 @@ jobs:
         run: npm run build # The build command of your project
 
       - name: Push to build branch
+        uses: s0/git-publish-subdir-action@develop
         env:
-          GITHUB_TOKEN: ${{ secrets.PAT }}
-        run: |
-          git config --global user.name 'chadyzogheib'
-          git config --global user.email 'chadyze@gmail.com'
-          git fetch origin
-          git switch --orphan build
-          git reset --hard
-          git clean -fdx
-          git add .
-          git commit -m "Build: $(date +'%Y-%m-%d %H:%M:%S')"
-          git push origin build --force
+          REPO: self
+          BRANCH: build # The branch name where you want to push the assets
+          FOLDER: build # The directory where your assets are generated
