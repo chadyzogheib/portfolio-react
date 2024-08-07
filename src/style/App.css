@@ -1,0 +1,15 @@
+.App {
+  text-align: center;
+  width: 100vw;
+  background-color: #cfd2ca;
+  height: 100vh;
+  scroll-behavior: smooth;
+}
+
+.sections {
+    height: 100vh;
+}
+
+.fp-watermark {
+  display: none;
+}

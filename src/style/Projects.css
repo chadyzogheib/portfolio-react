@@ -1,0 +1,6 @@
+#projects {
+    padding: 1rem;
+    height: 95.5vh;
+    overflow-y: scroll;
+    white-space: nowrap;
+}

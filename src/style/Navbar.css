@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    src: url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+  }
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    padding: 0.7rem;
+    border-radius: 22px;
+    top: 2rem;
+    position: fixed;
+    z-index:10000;
+    float: none;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(12,70,70,0.7);
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+a {
+    color: aliceblue;
+    margin-left: 0.6rem;
+    margin-right: 0.6em;
+    text-decoration: none;
+}
