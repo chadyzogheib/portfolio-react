@@ -1,15 +1,28 @@
+html, body, section {
+  block-size: 100vh;
+}
+
+html {
+  scroll-snap-type: y mandatory;
+}
+
+section {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .App {
   text-align: center;
   width: 100vw;
   background-color: #cfd2ca;
   height: 100vh;
-  scroll-behavior: smooth;
+
 }
 
 .sections {
     height: 100vh;
-}
-
-.fp-watermark {
-  display: none;
 }

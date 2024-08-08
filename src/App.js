@@ -12,11 +12,12 @@ import Contact from './Contact.js';
 
 function App() {
   return (
-    <Fullpage
+    /*<Fullpage
       scrollingSpeed={1000}
       anchors={['About', 'Experience', 'Skills', 'Projects', 'Contact']}
       navigation
-      render={({ state, fullpageApi }) => (
+      render={({ state, fullpageApi }) => (*/
+      <div className='full-scroll'>
         <div className="App">
           <Navbar />
           <div className="section">
@@ -35,8 +36,9 @@ function App() {
             <Contact />
           </div>
         </div>
-      )}
-    />
+        </div>
+      /*)}
+    />*/
   );
 }
 
