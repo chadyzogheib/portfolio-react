@@ -1,7 +1,6 @@
 import './style/App.css';
 
 import React from 'react';
-import Fullpage from '@fullpage/react-fullpage';
 
 import Navbar from './Navbar.js'
 import About from './About.js';
@@ -12,14 +11,10 @@ import Contact from './Contact.js';
 
 function App() {
   return (
-    /*<Fullpage
-      scrollingSpeed={1000}
-      anchors={['About', 'Experience', 'Skills', 'Projects', 'Contact']}
-      navigation
-      render={({ state, fullpageApi }) => (*/
       <div className='full-scroll'>
         <div className="App">
           <Navbar />
+          
           <div className="section">
             <About />
           </div>
@@ -37,8 +32,6 @@ function App() {
           </div>
         </div>
         </div>
-      /*)}
-    />*/
   );
 }
 
