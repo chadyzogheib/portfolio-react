@@ -103,10 +103,12 @@ input[type=checkbox]:checked~.dropdown::before{
     content: "\00d7";
     font-size: 30px;
     left: 17px;
+    color: aliceblue;
 }
 
 .dropdown:before {
     content: "\2630"; /* Unicode character for three horizontal lines (☰) */
+    color: aliceblue;
     display: block;
     font-size: 28px;
     user-select: none;
