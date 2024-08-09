@@ -1,13 +1,13 @@
-import './style/App.css';
+import '../style/App.css';
 
 import React from 'react';
 
-import Navbar from './Navbar.js'
-import About from './About.js';
-import Experience from './Experience.js';
-import Skills from './Skills.js';
-import Projects from './Projects.js';
-import Contact from './Contact.js';
+import Navbar from './Navbar.jsx'
+import About from './About.jsx';
+import Experience from './Experience.jsx';
+import Skills from './Skills.jsx';
+import Projects from './Projects.jsx';
+import Contact from './Contact.jsx';
 
 function App() {
   return (

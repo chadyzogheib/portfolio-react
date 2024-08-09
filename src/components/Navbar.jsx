@@ -1,4 +1,4 @@
-import './style/Navbar.css';
+import '../style/Navbar.css';
 
 import React, { useEffect, useState } from 'react';
 
@@ -37,10 +37,20 @@ function Navbar() {
         };
     }, []);
 
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setIsOpen(!isOpen);
+    };
+
     return (
+
         <div>
             <nav className="navbar">
-                <ul className="nav-links">
+                <input type="checkbox" id="checkbox_toggle" checked={isOpen}
+                    onChange={toggleMenu} />
+                <label htmlFor="checkbox_toggle" className="dropdown"></label>
+                <ul className={`nav-links ${isOpen ? 'open' : ''}`}>
                     <li>
                         <button onClick={() => scrollToSection('about')} className={`btn ${activeSection === 'about' ? 'highlight' : ''}`}>About</button>
                     </li>

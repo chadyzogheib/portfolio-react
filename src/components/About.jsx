@@ -1,4 +1,4 @@
-import './style/About.css';
+import '../style/About.css';
 import React from 'react';
 
 function About() {
@@ -7,13 +7,12 @@ function About() {
       <div className='intro'>
         <p>
           Hello world~!
+        <br/>
+        <br/>
+          I'm Chady Zogheib,
+          <br/>
+          a Junior Web Developer.
         </p>
-        <p>
-          I'm Chady Zogheib, a Junior Web Developer.
-        </p>
-      </div>
-      <div className='image'>
-
       </div>
     </section>
   );

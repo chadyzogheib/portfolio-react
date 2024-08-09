@@ -1,4 +1,4 @@
-import './style/Experience.css';
+import '../style/Experience.css';
 
 import React from 'react';
 

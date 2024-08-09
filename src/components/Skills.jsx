@@ -1,4 +1,4 @@
-import './style/Skills.css';
+import '../style/Skills.css';
 
 import React from 'react';
 

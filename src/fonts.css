@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Kalnia Glaze';
+    font-weight: 400;
+    src: url('/src/fonts/KalniaGlaze-VariableFont.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Aref';
+    src: url('/src/fonts/ArefRuqaaInk-Regular.ttf') format('truetype');
+  }
