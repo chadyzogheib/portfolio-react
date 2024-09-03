@@ -1,5 +1,6 @@
 import '../style/About.css';
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function About() {
   return (
@@ -12,6 +13,8 @@ function About() {
           I'm Chady Zogheib,
           <br/>
           a Junior Web Developer.
+          <br/>
+          <FontAwesomeIcon icon="download" />
         </p>
       </div>
     </section>

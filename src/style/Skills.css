@@ -1,4 +1,43 @@
 #skills {
     padding: 1rem;
     height: 95.5vh;
+    position: relative;
+}
+
+.tabsForm {
+    width: 250px;
+    height: 400px;
+    margin-top: 30%;
+}
+
+.panel {
+    height: 400px;
+    width: 750px;
+    margin-top: 30%;
+}
+
+.boxPanel {
+    align-items: center;
+    width: 1000px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.flex-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+}
+
+.flex-grid img {
+    flex: 1 1 calc(20% - 10px);
+    border-radius: 8px;
+    object-fit: cover;
+    width: 45px;
 }
