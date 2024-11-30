@@ -32,40 +32,42 @@ function Skills() {
   };
 
   const tools = [
-    'https://via.placeholder.com/200',
-    'https://via.placeholder.com/201',
-    'https://via.placeholder.com/202',
-    'https://via.placeholder.com/203',
-    'https://via.placeholder.com/204',
-    'https://via.placeholder.com/205',
+    '/images/tools/figma.svg',
+    '/images/tools/github.svg',
+    '/images/tools/microsoft-excel.svg',
+    '/images/tools/slack.svg',
+    '/images/tools/visual-studio-code.svg',
+    '/images/tools/zeplin.svg',
+    '/images/tools/jira.svg',
+    '/images/tools/subversion.svg',
   ];
 
   const languages = [
     '/images/languages/java.svg',
     '/images/languages/javascript.svg',
     '/images/languages/dot-net.svg',
+    '/images/languages/html.svg',
+    '/images/languages/css.svg',
+    '/images/languages/vba.svg',
   ];
 
   const databases = [
-    'https://via.placeholder.com/200',
-    'https://via.placeholder.com/201',
-    'https://via.placeholder.com/202',
-    'https://via.placeholder.com/203',
-    'https://via.placeholder.com/204',
-    'https://via.placeholder.com/205',
+    '/images/databases/mysql.svg',
+    '/images/databases/sql-server.svg',
   ];
 
   const libraries = [
     '/images/libraries/react.svg',
+    '/images/libraries/node-js.svg',
+    '/images/libraries/bootstrap-5.svg',
+    '/images/libraries/adapt.svg',
+    '/images/libraries/codeigniter.svg',
   ];
 
   const others = [
-    'https://via.placeholder.com/200',
-    'https://via.placeholder.com/201',
-    'https://via.placeholder.com/202',
-    'https://via.placeholder.com/203',
-    'https://via.placeholder.com/204',
-    'https://via.placeholder.com/205',
+    '/images/others/apple.svg',
+    '/images/others/windows.svg',
+    '/images/others/sap.svg',
   ];
 
   return (
@@ -86,41 +88,51 @@ function Skills() {
             <Tab label="Tools" value={0} />
             <Tab label="Languages" value={1} />
             <Tab label="Databases" value={2} />
-            <Tab label="Libraries" value={3} />
+            <Tab label="Frameworks & Libraries" value={3} />
             <Tab label="Others" value={4} />
           </Tabs>
           <TabPanel className="panel" value={mainTab} index={0}>
-            <div className="flex-grid">
-              {tools.map((src, index) => (
-                <img key={index} src={src} alt={`${index}`} />
+            <div className="cards">
+            {tools.map((src, index) => (
+              <div className='card'>  
+                  <img key={index} src={src} alt={`${index}`} />
+              </div>
               ))}
             </div>
           </TabPanel>
           <TabPanel className="panel" value={mainTab} index={1}>
-          <div className="flex-grid">
-              {languages.map((src, index) => (
-                <img key={index} src={src} alt={`${index}`} />
+          <div className="cards">
+            {languages.map((src, index) => (
+              <div className='card'>  
+                  <img key={index} src={src} alt={`${index}`} />
+              </div>
               ))}
             </div>
           </TabPanel>
           <TabPanel className="panel" value={mainTab} index={2}>
-          <div className="flex-grid">
-              {databases.map((src, index) => (
-                <img key={index} src={src} alt={`${index}`} />
+          <div className="cards">
+            {databases.map((src, index) => (
+              <div className='card'>  
+                  <img key={index} src={src} alt={`${index}`} />
+              </div>
               ))}
             </div>
           </TabPanel>
           <TabPanel className="panel" value={mainTab} index={3}>
-          <div className="flex-grid">
-              {libraries.map((src, index) => (
-                <img key={index} src={src} alt={`${index}`} />
+          <div className="cards">
+            {libraries.map((src, index) => (
+              <div className='card'>  
+                  <img key={index} src={src} alt={`${index}`} />
+              </div>
               ))}
             </div>
           </TabPanel>
           <TabPanel className="panel" value={mainTab} index={4}>
-          <div className="flex-grid">
-              {others.map((src, index) => (
-                <img key={index} src={src} alt={`${index}`} />
+          <div className="cards">
+            {others.map((src, index) => (
+              <div className='card'>  
+                  <img key={index} src={src} alt={`${index}`} />
+              </div>
               ))}
             </div>
           </TabPanel>

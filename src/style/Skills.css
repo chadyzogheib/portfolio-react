@@ -4,40 +4,66 @@
     position: relative;
 }
 
+img {
+    width: 6rem;
+    height: 6rem;
+    
+}
 .tabsForm {
-    width: 250px;
-    height: 400px;
-    margin-top: 30%;
+    align-content: center;
+    width: 15vw;
+    height: 50vh;
+    margin-top: 20%;
+    padding-top: 120px;
 }
 
 .panel {
-    height: 400px;
-    width: 750px;
-    margin-top: 30%;
+    height: 50vh;
+    width: 40vw;
+    margin-top: 22%;
+    padding-left: 30%;
 }
 
 .boxPanel {
     align-items: center;
-    width: 1000px;
-    height: 400px;
+    width: 70vw;
+    height: 50vh;
     display: flex;
     justify-content: center;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
-
-.flex-grid {
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    padding: 10px;
+    justify-content: center; /* Center the entire grid horizontally */
+    align-items: center;  
 }
 
-.flex-grid img {
-    flex: 1 1 calc(20% - 10px);
-    border-radius: 8px;
-    object-fit: cover;
-    width: 45px;
-}
+.cards {
+    margin-top: 22.6vh;
+    width: 55vw;
+    height: 50vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: relative;
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+    justify-content: center; /* Center the grid horizontally */
+    align-content: center; /* Center the grid vertically */
+  }
+  
+  /* Make sure cards in a row are centered if fewer than 4 */
+  .cards .card {
+    width: 6rem;
+    height: 6rem;
+    text-align: center;
+    border-radius: 3%;
+    align-items: center;
+    padding: 20px;
+    display: flex; /* Flexbox inside the card for content centering */
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+  }

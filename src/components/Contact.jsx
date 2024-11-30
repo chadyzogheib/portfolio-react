@@ -18,7 +18,7 @@ function Contact () {
               <a href='https://wa.me/+50688564728' alt='Whatsapp me'>
                 <img src='/images/whatsapp-icon.svg' alt='whatsapp' className='icono'/>
               </a>
-              <a href='http'>
+              <a href='https://t.me/chadyze'>
                 <img src='/images/telegram-icon.svg' alt='telegram' className='icono'/>
               </a>
               <a href='https://github.com/chadyzogheib'>
